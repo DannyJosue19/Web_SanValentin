@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    //background-color: #ffffff;
+    background: url('https://images.wallpapersden.com/image/download/roses-bushes-red_aGltZmyUmZqaraWkpJRmbmdlrWZlbWU.jpg') no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #fff;
+    border: 5px solid #ff0095;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.card h1 {
+    color: #cf0003;
+}
+
+.card p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.cat-container {
+    margin-top: 20px;
+}
+
+.cat-container img {
+    width: 100px;
+    height: auto;
+}
+
+.music-player {
+    margin-top: 20px;
+}
+
+.music-player img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #aee9fe;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e03e40;
+}
+
+.hearts, .flowers, .roses {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 1000%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.heart, .flower, .rose {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 8s infinite;
+}
+
+.heart {
+    background-image: url('https://c3.klipartz.com/pngpicture/818/702/sticker-png-corazon.png');
+}
+
+.flower {
+    background-image: url('https://e7.pngegg.com/pngimages/847/226/png-clipart-rose-single-red-rose-red-rose-flower-arranging-plant-stem-thumbnail.png');
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.heart:nth-child(1) {
+    left: 10%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+    left: 50%;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+    left: 70%;
+    animation-duration: 7s;
+    animation-delay: 4s;
+}
+
+.heart:nth-child(4) {
+    left: 90%;
+    animation-duration: 5s;
+    animation-delay: 6s;
+}
+
+.flower:nth-child(1) {
+    left: 20%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.flower:nth-child(2) {
+    left: 40%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.flower:nth-child(3) {
+    left: 60%;
+    animation-duration: 6s;
+    animation-delay: 5s;
+}
+
+.flower:nth-child(4) {
+    left: 80%;
+    animation-duration: 8s;
+    animation-delay: 7s;
+}
+
+.rose {
+    background-image: url('https://e7.pngegg.com/pngimages/847/226/png-clipart-rose-single-red-rose-red-rose-flower-arranging-plant-stem-thumbnail.png');
+    width: 50px;
+    height: 50px;
+    animation: float s infinite;
+}
